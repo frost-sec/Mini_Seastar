@@ -1,6 +1,7 @@
 # Mini-SeaStar: High-Performance Asynchronous C++ Framework
 
 Mini-SeaStar is a lightweight, high-performance C++ asynchronous networking framework inspired by the Seastar engine. It implements a Shared-Nothing and Thread-per-Core architecture, designed to eliminate lock contention and maximize hardware utilization on modern multi-core systems.
+
 ## This was independently replicated by the author based on Seastar, and is provided solely for learning purposes.
 
 ## 📂 Architecture & File Breakdown
@@ -78,4 +79,5 @@ wrk -t4 -c1000 -d30s http://localhost:8080
 
 ## benchmark
 Due to the author's insufficient capabilities, there is still a considerable gap compared to the mainstream technologies in the industry such as Boost.asio, Seastar, and the Go language.
+
 Within a 16-core Docker container, Mini-Seastar can achieve over 45 million QPS, Boost.asio can reach over 70 million QPS, and the Go language can achieve over 65 million QPS.
