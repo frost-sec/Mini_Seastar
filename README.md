@@ -80,4 +80,4 @@ wrk -t4 -c1000 -d30s http://localhost:8080
 ## benchmark
 Due to the author's insufficient capabilities, there is still a considerable gap compared to the mainstream technologies in the industry such as Boost.asio, Seastar, and the Go language.
 
-Within a 16-core Docker container, Mini-Seastar can achieve over 45 million QPS, Boost.asio can reach over 70 million QPS, and the Go language can achieve over 65 million QPS.
+Within a 16-core Docker container, Mini-Seastar can achieve over 450k QPS, Boost.asio can reach over 700k QPS, and the Go language can achieve over 650k QPS.
